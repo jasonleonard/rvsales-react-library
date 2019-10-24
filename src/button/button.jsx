@@ -83,7 +83,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  children: null,
+  children: 'Default',
   type: 'button',
   variant: 'primary',
   disabled: false
