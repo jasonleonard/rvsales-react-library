@@ -1,4 +1,5 @@
 import React from 'react'
+import { action } from '@storybook/addon-actions';
 import { Select } from './select'
 
 const label = 'Select RV Class'
@@ -16,5 +17,9 @@ export default {
 }
 
 export const selectFromScratch = () => (
-  <Select label={label} options={items} />
+  <Select
+    label={label}
+    options={items} 
+    onChange={action('Select')}
+  />
 )
